@@ -205,3 +205,36 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# MLflow local tracking
+mlruns/
+mlflow.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Large model artifacts (if very big)
+*.h5
+*.pt
+*.pth
+*.joblib
+
+# Environment variables
+.env
+
+Untitled.ipynb
