@@ -1,4 +1,5 @@
 import os
+import uvicorn
 os.environ["XGBOOST_VERBOSITY"] = "0"
 import pandas as pd
 from fastapi import FastAPI, HTTPException
@@ -29,7 +30,7 @@ model = mlflow.sklearn.load_model(MODEL_URI)
 # Get feature names (important!)
 features = model.feature_names_in_.tolist()
 
-app = FastAPI(title="Credit Risk Prediction API")
+app = FastAPI(title="End-to-End ML Platform for Financial Fraud Detection")
 
 class CreditData(BaseModel):
     features: Dict[str, float]
@@ -73,3 +74,9 @@ def predict(data: CreditData):
         return {"error": f"Missing feature: {e}"}
     
 print("features:", features)
+
+PORT = int(os.getenv("PORT", 8000))
+DEBUG = os.getenv("DEBUG", "False") == "True"
+
+if __name__ == "__main__":
+   uvicorn.run("app.main:app", host="0.0.0.0", port=PORT, reload=False)
