@@ -1,11 +1,8 @@
-FROM python:3.11 
+FROM python:3.11-slim 
 
 # Set environment variables to prevent Python from writing .pyc files and to ensure output is sent straight away
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-
-# Set working directory
-WORKDIR /app
 
 # Set the working directory in the container
 WORKDIR /app

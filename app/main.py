@@ -75,7 +75,7 @@ def predict(data: CreditData):
     
 print("features:", features)
 
-PORT = int(os.getenv("PORT", 8000))
+PORT = int(os.getenv("PORT", 10000))
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 if __name__ == "__main__":
