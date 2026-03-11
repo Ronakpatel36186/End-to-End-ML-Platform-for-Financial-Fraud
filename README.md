@@ -5,3 +5,7 @@ This project demonstrates a production-style machine learning pipeline for detec
 
 The goal of this project is to showcase how a machine learning model can be developed, tracked, packaged, and served as a real-time prediction API.
 
+## Author
+
+Ronak Patel – Master’s in Computer Science, Lakehead University
+Interested in Machine Learning Engineering, Data Science, and production ML systems
