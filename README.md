@@ -72,7 +72,7 @@ End-to-End-ML-Platform-for-Financial-Fraud-Detection/
 ├── .gitignore
 ├── Dockerfile                                              # Docker configuration for containerized deployment
 ├── requirements.txt                                        # Python dependencies
-├── End_to_End_ML_Platform_for_financial_Risk_Scoring.ipynb # Ipynb file include preprocessing,Model Training, Model Saving, MLflow  Experiments integrated with Dagshub
+├── End_to_End_ML_Platform_for_financial_Risk_Scoring.ipynb # Notebook containing data preprocessing, feature engineering, model training, and MLflow experiment tracking integrated with DagsHub.
 ├── Final-output-High-risk.png                              # screenshot of JSON output of High Risk 
 ├── Final-output-Low-risk.png                               # Screenshot of JSON output of Low risk
 └── README.md                                               # Project documentation
