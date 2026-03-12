@@ -7,6 +7,6 @@ The goal of this project is to showcase how a machine learning model can be deve
 
 ## Author
 
-Ronak Patel – Master’s in Computer Science, Lakehead University
+Ronak Miteshkumar Patel – Master’s in Computer Science, Lakehead University
 
 Interested in Machine Learning Engineering, Data Science, and production ML systems
