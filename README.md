@@ -113,7 +113,7 @@ curl -X 'POST' \
 ```
 
 ### Sample Response:
-<pre markdown="1"> ```json 
+<pre markdown="1"> ```JSON 
 {
   "prediction": 1,
   "risk": "High Risk"
