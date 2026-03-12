@@ -125,7 +125,8 @@ curl -X 'POST' \
 Ronak Miteshkumar Patel – Master’s in Computer Science, Lakehead University
 I’m passionate about Machine Learning Engineering, Data Science, and building production-ready ML systems. This project demonstrates my ability to integrate experiment tracking, registered models, API deployment, and containerization in an end-to-end workflow.
 
-
+### Project Structure
+```
 End-to-End-ML-Platform-for-Financial-Fraud/
 │
 ├── api/
@@ -140,3 +141,4 @@ End-to-End-ML-Platform-for-Financial-Fraud/
 ├── requirements.txt # Python dependencies
 ├── start.py # API entry point to run FastAPI server
 └── README.md # Project documentation
+```
