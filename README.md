@@ -1,9 +1,20 @@
 # End-to-End ML Platform for Financial Fraud Detection
 # Overview
 
-This project demonstrates a production-style machine learning pipeline for detecting fraudulent financial transactions. The system integrates model training, experiment tracking, API-based inference, and containerization to simulate a real-world ML deployment workflow.
+This project is a production-style machine learning system for detecting fraudulent financial transactions. The goal was to simulate a real-world ML workflow — from training a model, tracking experiments, to serving predictions via an API, all in a reproducible, containerized environment.
 
-The goal of this project is to showcase how a machine learning model can be developed, tracked, packaged, and served as a real-time prediction API.
+The project demonstrates how a machine learning model can be developed, tracked, containerized, and deployed using industry-grade tools and practices
+
+## Dataset
+The model is trained on historical financial transaction data containing numerical features and anonymized variables.  
+
+- Public dataset reference: [Kaggle Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+- Data type: Numerical, anonymized features, and transaction amount/time.
+
+## Model Input Features
+- Transaction Amount  
+- Transaction Time  
+- Anonymized numerical features (V1–V28)
 
 ## Author
 
