@@ -45,8 +45,8 @@ The model is trained on historical financial transaction data containing numeric
 ## ML Pipeline Overview
 
 
-![ML Pipeline Diagram](images/ml_pipeline.png)
-<img src="images/ml_pipeline.png" alt="ML Pipeline Diagram" width="800"/>
+![ML Pipeline Diagram](images/github.png)
+<img src="images/github.png" alt="ML Pipeline Diagram" width="800"/>
 
 Step-by-step:
 
