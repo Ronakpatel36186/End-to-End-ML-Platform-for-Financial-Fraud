@@ -176,7 +176,7 @@ curl -X 'POST' \
 
 **Ronak Miteshkumar Patel** – **Master’s in Computer Science, Lakehead University**
 
-I’m passionate about Machine Learning Engineering, Data Science, and building production-ready ML systems. This project demonstrates my ability to integrate experiment tracking, registered models, API deployment, and containerization in an end-to-end workflow.
-
+I am passionate about Machine Learning Engineering and Data Science, with a focus on building production-ready ML systems.  
+This project demonstrates my ability to integrate **experiment tracking, model registry, API deployment, and containerization** in an end-to-end ML workflow.
 
 THANK YOU
