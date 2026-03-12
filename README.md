@@ -56,6 +56,28 @@ Step-by-step:
 5. Results are returned as structured JSON
 6. All experiments and metrics are tracked in MLflow
 
+### Project Structure
+```
+End-to-End-ML-Platform-for-Financial-Fraud-Detection/
+│
+├── Dagshub-MLflow/
+│ └── Dagshub-Mlflow-Model-Registered.png        # Screenshot of Model Registered in Dagshub 
+│ └── Dagshub-Mlflow-Experiment-Dashboard.png    # Screenshot of Model Experiment in Dagshub 
+├── app/
+│ └── __init__.py    # empty init file
+│ └── main.py        # FASTAPI API file including Dagshub credential to load Model from Dagshub
+├── images/
+│ └── ML_workflow_pipeline.png  # Workflow pipeline diagram
+├── .dockerignore
+├── .gitignore
+├── Dockerfile       # Docker configuration for containerized deployment
+├── requirements.txt # Python dependencies
+├── End_to_End_ML_Platform_for_financial_Risk_Scoring.ipynb # Ipynb file include preprocessing,Model Training, Model Saving, MLflow  Experiments integrated with Dagshub
+├── Final-output-High-risk.png  # screenshot of JSON output of High Risk 
+├── Final-output-Low-risk.png   # Screenshot of JSON output of Low risk
+└── README.md                   # Project documentation
+```
+
 ## Model Training
 
 - Data preprocessing and feature engineering
@@ -125,20 +147,3 @@ curl -X 'POST' \
 Ronak Miteshkumar Patel – Master’s in Computer Science, Lakehead University
 I’m passionate about Machine Learning Engineering, Data Science, and building production-ready ML systems. This project demonstrates my ability to integrate experiment tracking, registered models, API deployment, and containerization in an end-to-end workflow.
 
-### Project Structure
-```
-End-to-End-ML-Platform-for-Financial-Fraud/
-│
-├── api/
-│ └── app.py # FastAPI application serving the trained model
-├── models/
-│ └── fraud_model.pkl # Optional saved model for local testing
-├── notebooks/
-│ └── model_training.ipynb # Jupyter notebook for EDA, preprocessing, and model experimentation
-├── scripts/
-│ └── train_model.py # Script for training models and logging metrics to MLflow
-├── Dockerfile # Docker configuration for containerized deployment
-├── requirements.txt # Python dependencies
-├── start.py # API entry point to run FastAPI server
-└── README.md # Project documentation
-```
