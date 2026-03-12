@@ -94,9 +94,8 @@ End-to-End-ML-Platform-for-Financial-Fraud-Detection/
 
 The Screenshot below shows the experiment dashboard with multiple trained models and their evaluation mewtrics such as **Accuracy**, **Precision**, **Recall**, **ROC-Test** and **ROC-Train**. 
 
-<div align="center">
-  <img src="Dagshub-MLflow\Dagshub-MLFlow-Experiment-Dashboard-1.png" alt="DagsHub Experiment Dashboard"/>
-</div>
+  <img src="Dagshub-MLflow\Dagshub-MLflow-Experiment-Dashboard.png" alt="DagsHub Experiment Dashboard" width = "300"/>
+
 
 ### Model Evaluation
 
