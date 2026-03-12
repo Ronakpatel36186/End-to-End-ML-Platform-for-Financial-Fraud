@@ -85,6 +85,35 @@ End-to-End-ML-Platform-for-Financial-Fraud-Detection/
 - Models registered and versioned on **DagsHub**
 - Inference uses the registered model from **DagsHub**, ensuring reproducibility and version control
 
+## Model Performance
+
+- Multiple machine learning models were trained and evaluated during experimentation. 
+- All experiments, metrics, and model comparisons were tracked using **MLflow integrated with DagsHub**.
+
+### Experiment Tracking Dashboard
+
+The Screenshot below shows the experiment dashboard with multiple trained models and their evaluation mewtrics such as **Accuracy**, **Precision**, **Recall**, **ROC-Test** and **ROC-Train**. 
+
+![DagsHub Experiment Dashboard](Dagshub-MLflow/Dagshub-Mlflow-Experiment-Dashboard.png)
+
+### Model Evaluation
+
+Due to the highly **imbalanced nature of fraud detection datasets**, traditional accuracy metrics can be misleading.  
+Therefore, this project uses **ROC-AUC (Receiver Operating Characteristic - Area Under Curve)** as the primary evaluation metric.
+
+Two ROC-AUC scores are tracked:
+
+- **ROC-AUC Train:** Measures model performance on training data.
+- **ROC-AUC Test:** Measures generalization performance on unseen data.
+
+Comparing these metrics helps identify:
+
+- **Overfitting:** When the training score is significantly higher than the test score.
+- **Underfitting:** When both scores are low.
+- **Good Fit:** When training and test scores are similar.
+
+The best model is selected based on the **highest ROC-AUC Test score**, ensuring strong performance on unseen transactions.
+
 ## Running the Project Locally
 ### 1. Clone the repo:
 ```bash
