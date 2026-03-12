@@ -123,5 +123,20 @@ curl -X 'POST' \
 ## Author
 
 Ronak Miteshkumar Patel – Master’s in Computer Science, Lakehead University
+I’m passionate about Machine Learning Engineering, Data Science, and building production-ready ML systems. This project demonstrates my ability to integrate experiment tracking, registered models, API deployment, and containerization in an end-to-end workflow.
 
-Interested in Machine Learning Engineering, Data Science, and production ML systems
+
+End-to-End-ML-Platform-for-Financial-Fraud/
+│
+├── api/
+│ └── app.py # FastAPI application serving the trained model
+├── models/
+│ └── fraud_model.pkl # Optional saved model for local testing
+├── notebooks/
+│ └── model_training.ipynb # Jupyter notebook for EDA, preprocessing, and model experimentation
+├── scripts/
+│ └── train_model.py # Script for training models and logging metrics to MLflow
+├── Dockerfile # Docker configuration for containerized deployment
+├── requirements.txt # Python dependencies
+├── start.py # API entry point to run FastAPI server
+└── README.md # Project documentation
