@@ -16,6 +16,47 @@ The model is trained on historical financial transaction data containing numeric
 - Transaction Time  
 - Anonymized numerical features (V1–V28)
 
+## What This Project Does
+
+- Trains a fraud detection model on historical transaction data.
+- Tracks experiments and model versions using **MLflow** integrated with **DagsHub**.
+- Loads the **registered model directly from DagsHub** for inference.
+- Serves the model through a **FastAPI REST API** for real-time predictions.
+- Ensures reproducibility and environment consistency using **Docker**.
+- Organized in a modular, **production-ready architecture**.
+
+## Key Features
+
+- End-to-end ML pipeline for fraud detection.
+- Experiment tracking & model versioning with **MLflow + DagsHub**.
+- Real-time predictions via **FastAPI API**.
+- **Dockerized** environment for easy deployment.
+- Modular project structure reflecting **production workflows**.
+
+## Technology Stack
+
+- Python – core language
+- Pandas & NumPy – data handling & numerical computations
+- Scikit-learn, XGBoost, LightGBM – machine learning models
+- MLflow & DagsHub – experiment tracking & model versioning
+- FastAPI – serving real-time predictions
+- Docker – reproducible, containerized environment
+
+## ML Pipeline Overview
+
+
+![ML Pipeline Diagram](C:\Users\Ronak\OneDrive\Desktop\Credit\ml_code\github.drawio.png)
+<img src="C:\Users\Ronak\OneDrive\Desktop\Credit\ml_code\github.drawio.png" alt="ML Pipeline Diagram" width="800"/>
+
+Step-by-step:
+
+1. Transaction data is sent to the API endpoint
+2. FastAPI formats and processes the input
+3. The trained model is loaded from DagsHub’s registered models
+4. Model generates predictions
+5. Results are returned as structured JSON
+6. All experiments and metrics are tracked in MLflow
+
 ## Author
 
 Ronak Miteshkumar Patel – Master’s in Computer Science, Lakehead University
