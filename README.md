@@ -43,8 +43,9 @@ The model is trained on historical financial transaction data containing numeric
 - Docker – reproducible, containerized environment
 
 ## ML Pipeline Overview
-
-<img src="images\ML_workflow_pipeline.png" alt="ML Pipeline Diagram" width="200"/>
+<div align="center">
+  <img src="images/ML_workflow_pipeline.png" alt="ML Pipeline Diagram" width="400"/>
+</div>
 
 Step-by-step:
 
