@@ -79,6 +79,46 @@ pip install -r requirements.txt
 ```bash
 uvicorn app.main:app --reload 
 ```
+## Running with Docker
+
+### 1. Build the Docker Image:
+```bash 
+docker build -t end-to-end-ml-platform-for-financial-fraud-detection-api .
+```
+### 2. Run the Container:
+```bash
+docker run -p 8000:8000 -e PORT=8000 end-to-end-ml-platform-for-financial-fraud-detection-api
+```
+
+### Test API example:
+```bash 
+curl -X 'POST' \
+  'http://localhost:8000/predict' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "features": {
+  "Time": 472,
+  "V1": -3.043540624,
+  "V2": -3.157307121,
+  "V3": 1.08846278,
+ ...
+  "V26": -0.145361715,
+  "V27": -0.252773123,
+  "V28": 0.035764225,
+  "Amount": 529
+}
+}'
+
+```
+
+### Sample Response:
+<pre markdown="1"> ```json 
+{
+  "prediction": 1,
+  "risk": "High Risk"
+}
+``` </pre>
 
 ## Author
 
