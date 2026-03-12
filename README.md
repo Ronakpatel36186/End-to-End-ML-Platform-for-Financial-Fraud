@@ -56,6 +56,30 @@ Step-by-step:
 5. Results are returned as structured JSON
 6. All experiments and metrics are tracked in MLflow
 
+## Model Training
+
+- Data preprocessing and feature engineering
+- Model training & evaluation tracked in **MLflow**
+- Models registered and versioned on **DagsHub**
+- Inference uses the registered model from **DagsHub**, ensuring reproducibility and version control
+
+## Running the Project Locally
+### 1. Clone the repo:
+```bash
+git clone https://github.com/Ronakpatel36186/End-to-End-ML-Platform-for-Financial-Fraud-Detection.git
+cd End-to-End-ML-Platform-for-Financial-Fraud-Detection
+```
+
+### 2. Install Dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Start the API:
+```bash
+uvicorn app.main:app --reload 
+```
+
 ## Author
 
 Ronak Miteshkumar Patel – Master’s in Computer Science, Lakehead University
