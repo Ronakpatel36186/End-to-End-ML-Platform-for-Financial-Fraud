@@ -7,11 +7,11 @@ The project demonstrates how a machine learning model can be developed, tracked,
 
 ## Business Impact
 
-- Demonstrates how machine learning can be applied to detect potentially fraudulent transactions in near real-time.
-- Highlights the role of ML systems in reducing manual fraud review efforts through automated predictions.
-- Shows how structured prediction outputs can support decision-making in financial risk systems.
-- Provides a foundation for building scalable fraud detection solutions using modern ML and MLOps tools.
-- Designed with considerations for high-risk classification problems such as financial fraud, illustrating practical ML application in the banking and fintech domain.
+- Demonstrates how machine learning can be applied to **detect potentially fraudulent transactions in near real-time**.
+- Highlights the role of ML systems in **reducing manual fraud review efforts** through automated predictions.
+- Shows how structured prediction outputs can support **decision-making in financial risk systems**.
+- Provides a foundation for building **scalable fraud detection solutions** using modern ML and MLOps tools.
+- Designed with considerations for **high-risk classification problems** such as financial fraud, illustrating practical ML application in the banking and fintech domain.
 
 ## Dataset
 The model is trained on historical financial transaction data containing numerical features and anonymized variables.  
@@ -26,8 +26,7 @@ The model is trained on historical financial transaction data containing numeric
 
 ### Note on Features
 
-- The dataset contains anonymized PCA-transformed features (V1–V28), which limits domain-specific feature engineering.
-
+- The dataset contains anonymized **PCA-transformed features (V1–V28)**, which limits domain-specific feature engineering.
 - In real-world applications, additional features such as user behavior, transaction frequency, and location patterns would be engineered to improve model performance.
 
 
@@ -107,7 +106,7 @@ End-to-End-ML-Platform-for-Financial-Fraud-Detection/
 
 ### Experiment Tracking Dashboard
 
-The Screenshot below shows the experiment dashboard with multiple trained models and their evaluation mewtrics such as **Accuracy**, **Precision**, **Recall**, **ROC-Test** and **ROC-Train**. 
+The Screenshot below shows the experiment dashboard with multiple trained models and their evaluation metrics such as **Accuracy**, **Precision**, **Recall**, **ROC-Test** and **ROC-Train**. 
 
 <img src="Dagshub-MLflow\Dagshub-Experiment-Readme-file.png" alt="DagsHub Experiment Dashboard" width = "1300"/>
 
@@ -160,7 +159,7 @@ docker run -p 8000:8000 -e PORT=8000 end-to-end-ml-platform-for-financial-fraud-
 
 - Implemented request validation using **Pydantic models within FastAPI** to enforce correct input schema for transaction features.
 - The API automatically rejects invalid or improperly formatted inputs with clear validation error messages.
-- Designed the prediction endpoint to return structured JSON responses containing fraud prediction results and risk labels.
+- Designed the prediction endpoint to return structured **JSON** responses containing fraud prediction results and risk labels.
 - Ensured consistent API behavior by defining a fixed input and output schema for all prediction requests.
 
 ### Test API example:
