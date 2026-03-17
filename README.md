@@ -5,6 +5,14 @@ This project is a production-style machine learning system for detecting fraudul
 
 The project demonstrates how a machine learning model can be developed, tracked, containerized, and deployed using industry-grade tools and practices
 
+## Business Impact
+
+- Demonstrates how machine learning can be applied to detect potentially fraudulent transactions in near real-time.
+- Highlights the role of ML systems in reducing manual fraud review efforts through automated predictions.
+- Shows how structured prediction outputs can support decision-making in financial risk systems.
+- Provides a foundation for building scalable fraud detection solutions using modern ML and MLOps tools.
+- Designed with considerations for high-risk classification problems such as financial fraud, illustrating practical ML application in the banking and fintech domain.
+
 ## Dataset
 The model is trained on historical financial transaction data containing numerical features and anonymized variables.  
 
@@ -15,6 +23,13 @@ The model is trained on historical financial transaction data containing numeric
 - Transaction Amount  
 - Transaction Time  
 - Anonymized numerical features (V1–V28)
+
+### Note on Features
+
+- The dataset contains anonymized PCA-transformed features (V1–V28), which limits domain-specific feature engineering.
+
+- In real-world applications, additional features such as user behavior, transaction frequency, and location patterns would be engineered to improve model performance.
+
 
 ## What This Project Does
 
@@ -141,6 +156,12 @@ docker build -t end-to-end-ml-platform-for-financial-fraud-detection-api .
 ```bash
 docker run -p 8000:8000 -e PORT=8000 end-to-end-ml-platform-for-financial-fraud-detection-api
 ```
+## API Reliability & Validation
+
+- Implemented request validation using **Pydantic models within FastAPI** to enforce correct input schema for transaction features.
+- The API automatically rejects invalid or improperly formatted inputs with clear validation error messages.
+- Designed the prediction endpoint to return structured JSON responses containing fraud prediction results and risk labels.
+- Ensured consistent API behavior by defining a fixed input and output schema for all prediction requests.
 
 ### Test API example:
 ```bash 
