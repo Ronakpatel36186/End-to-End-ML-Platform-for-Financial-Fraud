@@ -193,7 +193,7 @@ curl -X 'POST' \
 }
 ``` </pre>
 
-### Cloud Deployment
+## Cloud Deployment
 - Docker image pushed to AWS ECR
 - Task definition configured on AWS ECS Fargate
 - Environment variables passed securely for DagsHub model access
