@@ -9,7 +9,7 @@ __pycache__/
 # AWS CLI credentials
 .AWS/
 
-/app/main1.py
+/app/main1.0.py
 
 # Distribution / packaging
 .Python
