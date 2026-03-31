@@ -30,7 +30,7 @@ The model is trained on historical financial transaction data containing numeric
 - In real-world applications, additional features such as user behavior, transaction frequency, and location patterns would be engineered to improve model performance.
 
 
-## What This Project Does
+## Project Highlights
 
 - Trains a fraud detection model on historical transaction data.
 - Tracks experiments and model versions using **MLflow** integrated with **DagsHub**.
@@ -44,17 +44,18 @@ The model is trained on historical financial transaction data containing numeric
 - End-to-end ML pipeline for fraud detection.
 - Experiment tracking & model versioning with **MLflow + DagsHub**.
 - Real-time predictions via **FastAPI API**.
-- **Dockerized** environment for easy deployment.
+- **Containerized and cloud-ready architecture** for seamless deployment on **AWS ECS/Fargate****.
 - Modular project structure reflecting **production workflows**.
 
 ## Technology Stack
 
-- Python – core language
-- Pandas & NumPy – data handling & numerical computations
-- Scikit-learn, XGBoost, LightGBM – machine learning models
-- MLflow & DagsHub – experiment tracking & model versioning
-- FastAPI – serving real-time predictions
-- Docker – reproducible, containerized environment
+- Programming & ML: Python, Pandas, NumPy, Scikit-learn, XGBoost, LightGBM, TensorFlow, Keras, PyTorch
+
+- API & Deployment: FastAPI, Pydantic, Docker, AWS ECS/Fargate, ECR
+
+- ML Ops & Experiment Tracking: MLflow, DagsHub
+
+- Visualization: Matplotlib
 
 ## ML Pipeline Overview
 <div align="center">
@@ -191,6 +192,12 @@ curl -X 'POST' \
   "risk": "High Risk"
 }
 ``` </pre>
+
+### Cloud Deployment
+- Docker image pushed to AWS ECR
+- Task definition configured on AWS ECS Fargate
+- Environment variables passed securely for DagsHub model access
+- Architecture is scalable, modular, and cloud-ready
 
 ## Author
 

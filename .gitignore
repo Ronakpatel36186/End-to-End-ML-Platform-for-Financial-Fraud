@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# AWS CLI credentials
+.AWS/
+
+/app/main1.py
+
 # Distribution / packaging
 .Python
 build/
@@ -238,3 +243,4 @@ Thumbs.db
 .env
 
 Untitled.ipynb
+
